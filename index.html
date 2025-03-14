@@ -6,90 +6,133 @@
     <title>Kullu-Source's Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
+            background-color: lightgray;
+            color: darkslategray;
+            line-height: 1.6;
         }
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(135deg, darkslateblue, steelblue);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
         }
         nav {
-            background-color: #34495e;
-            padding: 10px 0;
+            background-color: slategray;
+            padding: 15px 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: color 0.3s, transform 0.2s;
         }
         nav a:hover {
-            color: #e74c3c;
+            color: tomato;
+            transform: scale(1.1);
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 20px;
+            padding: 25px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: translateY(-5px);
         }
         .container h2 {
-            color: #2c3e50;
+            color: darkslateblue;
+            font-size: 2em;
+            border-bottom: 2px solid tomato;
+            padding-bottom: 5px;
         }
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #e74c3c;
+            padding: 12px 25px;
+            background-color: tomato;
             color: white;
             text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            background-color: darkred;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: whitesmoke;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
-        .button:hover {
-            background-color: #c0392b;
+        ul li:hover {
+            background-color: lightgrey;
+        }
+        ul li a {
+            color: darkslateblue;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        ul li a:hover {
+            color: tomato;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #2c3e50;
+            background: linear-gradient(135deg, darkslateblue, steelblue);
             color: white;
             width: 100%;
+            font-size: 0.9em;
         }
         @media (max-width: 600px) {
             nav a {
                 display: block;
-                margin: 10px 0;
+                margin: 15px 0;
             }
             header h1 {
-                font-size: 1.8em;
+                font-size: 2em;
+            }
+            .container {
+                margin: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <h1>Welcome to Kullu-Source</h1>
         <p>Your hub for cool ideas!</p>
     </header>
 
-    <!-- Navigation Bar -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -97,25 +140,24 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Sections -->
     <div class="container" id="home">
         <h2>Home</h2>
         <p>Welcome to my site! This is Kullu-Source’s corner of the web, hosted on GitHub Pages.</p>
-        <a href="#earning" class="button">Explore My lessons</a>
+        <a href="#learning" class="button">Explore My Lessons</a>
     </div>
 
     <div class="container" id="about">
         <h2>About Me</h2>
-        <p>Hi, I’m Kullu-Source! I’m learning coding, tech, and building things that make life better. Check out my attempt below!</p>
+        <p>Hi, I’m Kullu-Source! I’m learning coding, tech, and building things that make life better. Check out my attempts below!</p>
     </div>
 
     <div class="container" id="learning">
         <h2>My Learning</h2>
-        <p>Here’s what I’ve been learning :</p>
+        <p>Here’s what I’ve been learning:</p>
         <ul>
-            <li><a href="https://github.com/kullu-source/process" target="_blank">Process</a> - A project exploring process-related functionalities.</li>
-            <li><a href="https://github.com/kullu-source/string-" target="_blank">String-</a> - A project focused on string manipulation and utilities.</li>
             <li><a href="https://github.com/kullu-source/test-git" target="_blank">Test-Git</a> - A test project to experiment with Git.</li>
+            <li><a href="https://github.com/kullu-source/process" target="_blank">Process</a> - A day switch process.</li>
+            <li><a href="https://github.com/kullu-source/string-" target="_blank">String-</a> - A lesson focused on string manipulation and utilities.</li>
         </ul>
     </div>
 
@@ -125,12 +167,10 @@
         <p><a href="https://github.com/kullu-source" target="_blank" class="button">GitHub Profile</a></p>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 Kullu-Source. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for smooth scrolling -->
     <script>
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
